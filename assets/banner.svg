@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Accents -->
+    <radialGradient id="glow-cyan" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-purple" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1.5" fill="#38bdf8" fill-opacity="0.2" />
+    </pattern>
+
+    <!-- Dynamic Flow Styles -->
+    <style>
+      .pulse-node {
+        animation: pulse 3s ease-in-out infinite alternate;
+      }
+      .dash-flow {
+        stroke-dasharray: 8 6;
+        animation: flow 20s linear infinite;
+      }
+      .glow-orb {
+        animation: floatOrb 8s ease-in-out infinite alternate;
+      }
+      @keyframes flow {
+        from { stroke-dashoffset: 200; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.98); opacity: 0.85; }
+        100% { transform: scale(1.02); opacity: 1; }
+      }
+      @keyframes floatOrb {
+        0% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-15px) translateX(10px); }
+        100% { transform: translateY(10px) translateX(-15px); }
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #38bdf8;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        letter-spacing: -1px;
+        fill: #ffffff;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        fill: #94a3b8;
+      }
+      .tagline-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        fill: #cbd5e1;
+      }
+      .node-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        fill: #f1f5f9;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background Layer -->
+  <rect width="1200" height="420" rx="16" fill="url(#bg-grad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#grid)" />
+
+  <!-- Ambient Dynamic Orbs (Behind Foreground) -->
+  <circle class="glow-orb" cx="180" cy="120" r="160" fill="url(#glow-cyan)" />
+  <circle class="glow-orb" cx="1020" cy="300" r="220" fill="url(#glow-purple)" />
+
+  <!-- Animated Dynamic Flow Lines in Background -->
+  <g opacity="0.35">
+    <path class="dash-flow" d="M 100 370 Q 350 320 600 360 T 1100 340" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="dash-flow" d="M 150 50 Q 450 110 750 60 T 1120 90" fill="none" stroke="#818cf8" stroke-width="1.5" />
+    <path class="dash-flow" d="M 200 400 C 500 370 700 430 1050 380" fill="none" stroke="#c084fc" stroke-width="2" />
+  </g>
+
+  <!-- Dynamic Process / Flow Nodes (Bottom Interactive Layer) -->
+  <g transform="translate(180, 315)">
+    <!-- Node 1: Requirements -->
+    <rect x="0" y="0" width="165" height="46" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" opacity="0.95" />
+    <circle cx="22" cy="23" r="6" fill="#38bdf8" />
+    <text x="36" y="27" class="node-text">📝 PRD / Requirements</text>
+
+    <!-- Connector 1 -->
+    <line x1="165" y1="23" x2="215" y2="23" stroke="#64748b" stroke-width="2" class="dash-flow" />
+
+    <!-- Node 2: AI Agent & RAG -->
+    <rect x="215" y="0" width="195" height="46" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="1.2" opacity="0.95" />
+    <circle cx="237" cy="23" r="6" fill="#818cf8" />
+    <text x="251" y="27" class="node-text">🤖 Autonomous AI Agent</text>
+
+    <!-- Connector 2 -->
+    <line x1="410" y1="23" x2="460" y2="23" stroke="#64748b" stroke-width="2" class="dash-flow" />
+
+    <!-- Node 3: Structured Test Cases -->
+    <rect x="460" y="0" width="185" height="46" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.2" opacity="0.95" />
+    <circle cx="482" cy="23" r="6" fill="#a855f7" />
+    <text x="496" y="27" class="node-text">⚡ Executable Test Cases</text>
+
+    <!-- Connector 3 -->
+    <line x1="645" y1="23" x2="695" y2="23" stroke="#64748b" stroke-width="2" class="dash-flow" />
+
+    <!-- Node 4: Self-Healing -->
+    <rect x="695" y="0" width="155" height="46" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.2" opacity="0.95" />
+    <circle cx="715" cy="23" r="6" fill="#34d399" />
+    <text x="729" y="27" class="node-text">🛡️ Self-Healing QA</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Title, Subtitle, Tagline (Always Crisp and Fully Visible) -->
+  <g transform="translate(0, 0)">
+    <!-- Pill Badge -->
+    <g transform="translate(425, 48)">
+      <rect x="0" y="0" width="350" height="34" rx="17" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+      <circle cx="20" cy="17" r="4.5" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="35" y="22" class="badge-text">NEXT-GEN QUALITY ENGINEERING &amp; AGENTS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="145" text-anchor="middle" class="title-text">
+      Awesome AI-Driven Test Case Generation
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="195" text-anchor="middle" class="subtitle-text">
+      Curated Leaderboard of Enterprise SaaS Platforms &amp; Open-Source Testing Agents
+    </text>
+
+    <!-- Tagline & Feature Badges -->
+    <g transform="translate(600, 245)" text-anchor="middle">
+      <text class="tagline-text">
+        ⚡ Requirement-to-Test · 🧠 Agentic Workflows · 🔄 Self-Healing Playwright · 📚 RAG Test Synthesis
+      </text>
+    </g>
+  </g>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1198" height="418" rx="15" fill="none" stroke="#475569" stroke-width="1.2" stroke-opacity="0.5" />
+</svg>
