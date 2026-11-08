@@ -158,121 +158,121 @@ The following commercial AI test generation platforms are sorted descending by *
 
 ## 🐙 Open-Source GitHub Projects
 
-The following open-source AI test generation and self-healing tools are **sorted descending by GitHub Star Count**:
+The following open-source AI test generation and self-healing tools are **sorted descending by GitHub Stars_Count**:
 
-- **[Shortest](https://github.com/antiwork/shortest)** [![GitHub stars](https://img.shields.io/github/stars/antiwork/shortest?style=social&color=white)](https://github.com/antiwork/shortest/stargazers) ⚡
+- **[Shortest](https://github.com/antiwork/shortest)** [![GitHub_Stars](https://img.shields.io/github/stars/antiwork/shortest?style=social&color=white)](https://github.com/antiwork/shortest/stargazers) ⚡
   **QA via natural language AI tests**.
   - **Features**: End-to-end AI test execution framework running natural language instructions directly via Playwright; self-improves and learns from execution traces; integrates with GitHub Actions for automated regression pipelines.
   - **Tech Stack**: TypeScript, Playwright, Anthropic Claude.
   - **License**: MIT.
   - **Best for**: QA engineers wanting natural language driven E2E test execution.
 
-- **[Qodo-Cover](https://github.com/qodo-ai/qodo-cover)** [![GitHub stars](https://img.shields.io/github/stars/qodo-ai/qodo-cover?style=social&color=white)](https://github.com/qodo-ai/qodo-cover/stargazers) 🛡️
+- **[Qodo-Cover](https://github.com/qodo-ai/qodo-cover)** [![GitHub_Stars](https://img.shields.io/github/stars/qodo-ai/qodo-cover?style=social&color=white)](https://github.com/qodo-ai/qodo-cover/stargazers) 🛡️
   **AI-powered automated test generation and coverage enhancement tool**.
   - **Features**: Analyzes existing repository codebases, detects missing code coverage branches, and automatically generates valid unit test suites to increase test coverage; integrates directly into CI/CD pipelines.
   - **Tech Stack**: Python, LLM orchestration.
   - **License**: AGPL-3.0.
   - **Best for**: Automated unit test suite generation and code coverage improvement in CI/CD.
 
-- **[Pynguin](https://github.com/se2p/pynguin)** [![GitHub stars](https://img.shields.io/github/stars/se2p/pynguin?style=social&color=white)](https://github.com/se2p/pynguin/stargazers) 🐍
+- **[Pynguin](https://github.com/se2p/pynguin)** [![GitHub_Stars](https://img.shields.io/github/stars/se2p/pynguin?style=social&color=white)](https://github.com/se2p/pynguin/stargazers) 🐍
   **The PYthoN General UnIt Test geNerator**.
   - **Features**: Automated unit test generation framework for Python programs; applies search-based software testing and mutation testing algorithms to generate comprehensive pytest suites with high branch coverage.
   - **Tech Stack**: Python, AST analysis.
   - **License**: LGPL-3.0 / MIT.
   - **Best for**: Automated Python unit test generation without manual scripting.
 
-- **[Munk AI](https://github.com/chaxiu/munk-ai)** [![GitHub stars](https://img.shields.io/github/stars/chaxiu/munk-ai?style=social&color=white)](https://github.com/chaxiu/munk-ai/stargazers) 📱
+- **[Munk AI](https://github.com/chaxiu/munk-ai)** [![GitHub_Stars](https://img.shields.io/github/stars/chaxiu/munk-ai?style=social&color=white)](https://github.com/chaxiu/munk-ai/stargazers) 📱
   **Self-improving AI testing engine across Android, iOS, and Web**.
   - **Features**: Autonomous testing agent executing multi-platform test journeys; automatically detects UI changes, plans test paths, and refines execution strategies over time.
   - **Tech Stack**: Python, Computer Vision, Appium/Playwright.
   - **License**: Apache-2.0.
   - **Best for**: Cross-platform mobile and web automated exploration and test scenario generation.
 
-- **[Scenario](https://github.com/langwatch/scenario)** [![GitHub stars](https://img.shields.io/github/stars/langwatch/scenario?style=social&color=white)](https://github.com/langwatch/scenario/stargazers) 🤖
+- **[Scenario](https://github.com/langwatch/scenario)** [![GitHub_Stars](https://img.shields.io/github/stars/langwatch/scenario?style=social&color=white)](https://github.com/langwatch/scenario/stargazers) 🤖
   **Agentic testing framework for agentic codebases**.
   - **Features**: End-to-end conversational and multi-turn scenario simulation for AI agents; validates agent decisions, tool calls, and output safety against multi-step user scenarios.
   - **Tech Stack**: TypeScript / Python, LLM evaluators.
   - **License**: Apache-2.0.
   - **Best for**: Testing and validating LLM agents and multi-agent workflows.
 
-- **[Randoop](https://github.com/randoop/randoop)** [![GitHub stars](https://img.shields.io/github/stars/randoop/randoop?style=social&color=white)](https://github.com/randoop/randoop/stargazers) ☕
+- **[Randoop](https://github.com/randoop/randoop)** [![GitHub_Stars](https://img.shields.io/github/stars/randoop/randoop?style=social&color=white)](https://github.com/randoop/randoop/stargazers) ☕
   **Automatic unit test generation for Java**.
   - **Features**: Feedback-directed random test generation for Java classes; automatically creates regression tests and error-revealing unit tests (JUnit) to capture bugs and contract violations.
   - **Tech Stack**: Java.
   - **License**: Apache-2.0.
   - **Best for**: Enterprise Java unit test generation and regression suite creation.
 
-- **[TestPilot](https://github.com/githubnext/testpilot)** [![GitHub stars](https://img.shields.io/github/stars/githubnext/testpilot?style=social&color=white)](https://github.com/githubnext/testpilot/stargazers) 🧪
+- **[TestPilot](https://github.com/githubnext/testpilot)** [![GitHub_Stars](https://img.shields.io/github/stars/githubnext/testpilot?style=social&color=white)](https://github.com/githubnext/testpilot/stargazers) 🧪
   **Test generation using Large Language Models** by GitHub Next.
   - **Features**: Explores adaptive LLM prompt orchestration to generate automated JavaScript and TypeScript unit test suites with assertion synthesis; researches AI-driven test completeness.
   - **Tech Stack**: TypeScript, OpenAI API.
   - **License**: MIT.
   - **Best for**: AI-driven JavaScript/TypeScript unit test generation research.
 
-- **[Chromogen](https://github.com/open-source-labs/Chromogen)** [![GitHub stars](https://img.shields.io/github/stars/open-source-labs/Chromogen?style=social&color=white)](https://github.com/open-source-labs/Chromogen/stargazers) ⚛️
+- **[Chromogen](https://github.com/open-source-labs/Chromogen)** [![GitHub_Stars](https://img.shields.io/github/stars/open-source-labs/Chromogen?style=social&color=white)](https://github.com/open-source-labs/Chromogen/stargazers) ⚛️
   **UI-driven Jest test-generation tool for React state management**.
   - **Features**: Automatically records state modifications (Recoil selectors and Zustand store hooks) during manual user interactions and outputs Jest unit and integration tests.
   - **Tech Stack**: JavaScript/TypeScript, Jest, React.
   - **License**: MIT.
   - **Best for**: Front-end developers generating tests from React UI interaction.
 
-- **[Agentic-Playwright](https://github.com/idavidov13/agentic-playwright)** [![GitHub stars](https://img.shields.io/github/stars/idavidov13/agentic-playwright?style=social&color=white)](https://github.com/idavidov13/agentic-playwright/stargazers) 🎭
+- **[Agentic-Playwright](https://github.com/idavidov13/agentic-playwright)** [![GitHub_Stars](https://img.shields.io/github/stars/idavidov13/agentic-playwright?style=social&color=white)](https://github.com/idavidov13/agentic-playwright/stargazers) 🎭
   **Production-grade Playwright + TypeScript scaffold for agentic testing**.
   - **Features**: Ready-to-use testing harness designed specifically for autonomous AI coding agents to author, run, and self-validate Playwright test suites.
   - **Tech Stack**: TypeScript, Playwright.
   - **License**: MIT.
   - **Best for**: Developers orchestrating AI agents to generate and execute Playwright end-to-end tests.
 
-- **[UTBotJava](https://github.com/UnitTestBot/UTBotJava)** [![GitHub stars](https://img.shields.io/github/stars/UnitTestBot/UTBotJava?style=social&color=white)](https://github.com/UnitTestBot/UTBotJava/stargazers) 🔍
+- **[UTBotJava](https://github.com/UnitTestBot/UTBotJava)** [![GitHub_Stars](https://img.shields.io/github/stars/UnitTestBot/UTBotJava?style=social&color=white)](https://github.com/UnitTestBot/UTBotJava/stargazers) 🔍
   **Automated unit test generation and precise code analysis for Java**.
   - **Features**: Combines symbolic execution with machine learning to generate high-coverage JUnit test cases and pinpoint subtle edge-case bugs and security vulnerabilities.
   - **Tech Stack**: Java, Kotlin, Z3 solver.
   - **License**: Apache-2.0.
   - **Best for**: In-depth Java unit test generation and formal verification.
 
-- **[TestGPT](https://github.com/fayez-nazzal/TestGPT)** [![GitHub stars](https://img.shields.io/github/stars/fayez-nazzal/TestGPT?style=social&color=white)](https://github.com/fayez-nazzal/TestGPT/stargazers) 💡
+- **[TestGPT](https://github.com/fayez-nazzal/TestGPT)** [![GitHub_Stars](https://img.shields.io/github/stars/fayez-nazzal/TestGPT?style=social&color=white)](https://github.com/fayez-nazzal/TestGPT/stargazers) 💡
   **AI companion that writes unit tests on your behalf**.
   - **Features**: Automated CLI tool analyzing source code files and generating comprehensive unit tests with mocks and edge case coverage.
   - **Tech Stack**: Python, OpenAI API.
   - **License**: MIT.
   - **Best for**: Rapid unit test scaffolding using LLMs.
 
-- **[write-the](https://github.com/Wytamma/write-the)** [![GitHub stars](https://img.shields.io/github/stars/Wytamma/write-the?style=social&color=white)](https://github.com/Wytamma/write-the/stargazers) ✍️
+- **[write-the](https://github.com/Wytamma/write-the)** [![GitHub_Stars](https://img.shields.io/github/stars/Wytamma/write-the?style=social&color=white)](https://github.com/Wytamma/write-the/stargazers) ✍️
   **AI-powered documentation and test generation tool**.
   - **Features**: CLI tool that analyzes source code to synthesize documentation, docstrings, and executable unit tests using LLMs.
   - **Tech Stack**: Python, LLMs.
   - **License**: MIT.
   - **Best for**: Simultaneous test generation and documentation synthesis.
 
-- **[TestTeller](https://github.com/iAviPro/testteller-agent)** [![GitHub stars](https://img.shields.io/github/stars/iAviPro/testteller-agent?style=social&color=white)](https://github.com/iAviPro/testteller-agent/stargazers) 📚
+- **[TestTeller](https://github.com/iAviPro/testteller-agent)** [![GitHub_Stars](https://img.shields.io/github/stars/iAviPro/testteller-agent?style=social&color=white)](https://github.com/iAviPro/testteller-agent/stargazers) 📚
   **RAG-based test generation agent** (PyPI package: `testteller`).
   - **Features**: Generates multiple test types—End-to-End (E2E) user journeys, Integration tests (API contracts), Technical tests (performance, security, resilience), and Mocked System tests; comprehensive scenario coverage (happy paths, edge cases, failure/recovery); ingests multi-format documentation (PDF, Word, Excel, Markdown, code); RAG pipeline powered by Google Gemini and ChromaDB; outputs structured Markdown and test scripts.
   - **Tech Stack**: Python 3.11+, ChromaDB, Google Gemini API.
   - **License**: Open Source / PyPI.
   - **Best for**: Teams wanting an open-source RAG agent generating test cases directly from specification documents and code.
 
-- **[Healwright](https://github.com/amrsa1/healwright)** [![GitHub stars](https://img.shields.io/github/stars/amrsa1/healwright?style=social&color=white)](https://github.com/amrsa1/healwright/stargazers) 🩹
+- **[Healwright](https://github.com/amrsa1/healwright)** [![GitHub_Stars](https://img.shields.io/github/stars/amrsa1/healwright?style=social&color=white)](https://github.com/amrsa1/healwright/stargazers) 🩹
   **Self-healing Playwright selector repair engine**.
   - **Features**: Automatic broken locator detection during test runs; token-efficient DOM snapshots; similarity heuristic and AI-assisted repairs; FastMCP server for IDE agent integration; live verification in headless Chromium before saving patches.
   - **Tech Stack**: Python, Playwright, FastMCP.
   - **License**: MIT / PyPI.
   - **Best for**: Keeping AI-generated Playwright tests stable across UI refactors.
 
-- **[Yewo](https://github.com/yewohq/yewo)** [![GitHub stars](https://img.shields.io/github/stars/yewohq/yewo?style=social&color=white)](https://github.com/yewohq/yewo/stargazers) 📱
+- **[Yewo](https://github.com/yewohq/yewo)** [![GitHub_Stars](https://img.shields.io/github/stars/yewohq/yewo?style=social&color=white)](https://github.com/yewohq/yewo/stargazers) 📱
   **AI-driven mobile E2E testing agent**.
   - **Features**: Natural language test journey generation for iOS and Android; Appium-driven execution; sensitive data masking and security rule auditing.
   - **Tech Stack**: Python, Appium.
   - **License**: Open Source / PyPI.
   - **Best for**: AI-driven mobile test case generation and execution.
 
-- **[playwright-self-healing-framework](https://github.com/darkokos21/self-healing-framework-playwright)** [![GitHub stars](https://img.shields.io/github/stars/darkokos21/self-healing-framework-playwright?style=social&color=white)](https://github.com/darkokos21/self-healing-framework-playwright/stargazers) 🔄
+- **[playwright-self-healing-framework](https://github.com/darkokos21/self-healing-framework-playwright)** [![GitHub_Stars](https://img.shields.io/github/stars/darkokos21/self-healing-framework-playwright?style=social&color=white)](https://github.com/darkokos21/self-healing-framework-playwright/stargazers) 🔄
   **ML-powered self-healing test automation framework for Playwright**.
   - **Features**: Captures semantic element fingerprints (tag, id, classes, attributes, visible text); evaluates candidates using ML ranking algorithms; threshold-based acceptance; generates confidence-based reports.
   - **Tech Stack**: TypeScript, Playwright, FastAPI, Python, scikit-learn.
   - **License**: MIT.
   - **Best for**: Transparent, ML-ranked self-healing for Playwright test automation.
 
-- **[CANVAS (canvas-heal)](https://github.com/mandavillivijay/CANVAS)** [![GitHub stars](https://img.shields.io/github/stars/mandavillivijay/CANVAS?style=social&color=white)](https://github.com/mandavillivijay/CANVAS/stargazers) 🎨
+- **[CANVAS (canvas-heal)](https://github.com/mandavillivijay/CANVAS)** [![GitHub_Stars](https://img.shields.io/github/stars/mandavillivijay/CANVAS?style=social&color=white)](https://github.com/mandavillivijay/CANVAS/stargazers) 🎨
   **Semantic intent-based self-healing for UI tests** (PyPI: `canvas-heal`).
   - **Features**: Confidence-gated resolver (auto-heal above 0.92, human confirmation 0.75–0.92); pytest plugin; supports Playwright and Selenium; audit logs exportable as JUnit XML.
   - **Tech Stack**: Python, pytest, Playwright/Selenium.
