@@ -44,7 +44,20 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
+| Platform | Description | Pricing | Free Tier / Limits |
+| --- | --- | --- | --- |
+| **BrowserStack Test Case Generator** | AI agent that converts requirements into test cases; analyzes PRDs/user stories, edge case identification, script generation. | Bundled with BrowserStack AI; Automate starts at $99/mo | No free tier for AI agents (trial available) |
+| **Qodo (formerly CodiumAI)** | AI test generation and code quality platform; unit test suggestions (Qodo Gen) and PR bug analysis (Qodo Merge). | Developer free; Teams from $19/user/mo; Enterprise custom | Free tier available (individual developers) |
+| **Katalon Run with AI** | Agentic requirement-to-script execution against live applications; auto-generates runnable Katalon Studio scripts. | Studio Enterprise $229/seat/mo; platform tiers | Free version of Katalon Studio (limited features; AI on paid) |
+| **testRigor** | Generative AI automated testing using free-flowing plain English authoring. | Custom quote-only | No permanent free tier (trial available) |
+| **aqua cloud AI Copilot** | Requirement-to-test case generation with positive/negative test paths and dependency linking. | Quote-only | Not specified (trial available upon request) |
+| **Qase AI** | Generates manual test cases from requirements, converts manual to automated (Playwright, Cypress, Selenium). | Included in paid plans (credit-based monthly pool) | No free AI on free tier (paid plans only) |
+| **Testmo AI** | Human-in-the-loop requirement test case generation (Text, Steps, BDD) with requirement traceability. | Included across all plans; no add-on fee | Free tier available with AI included (10–60 cases/request) |
+| **Functionize Architect** | Smart test recorder & creator with self-healing, dynamic editing, and randomized data generation. | Quote-only | 14-day free trial |
+| **Testim Copilot (Tricentis)** | Generative AI within Testim editor to generate custom steps, explain code, and repair tests. | Add-on to Testim; quote-only | Free trial available |
+| **Tricentis Tosca AI** | Enterprise agentic test automation generating tests from natural language and Jira requirements. | Enterprise quote-only (credit consumption) | None |
 
+### Platform Deep-Dives
 
 - **BrowserStack Test Case Generator**
 
@@ -108,35 +121,73 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Open-Source GitHub Projects
 
+- **[Shortest](https://github.com/antiwork/shortest)** [![GitHub stars](https://img.shields.io/github/stars/antiwork/shortest?style=social&color=white)](https://github.com/antiwork/shortest/stargazers)
 
+  **QA via natural language AI tests**. **Features**: End-to-end AI test execution framework running natural language instructions directly via Playwright; self-improves and learns from execution traces; integrates with GitHub Actions for automated regression pipelines. **Tech stack**: TypeScript, Playwright, Anthropic Claude. **License**: MIT. **Best for**: QA engineers wanting natural language driven E2E test execution.
 
-- **TestTeller**
+- **[Qodo-Cover](https://github.com/qodo-ai/qodo-cover)** [![GitHub stars](https://img.shields.io/github/stars/qodo-ai/qodo-cover?style=social&color=white)](https://github.com/qodo-ai/qodo-cover/stargazers)
 
-  **RAG-based test generation agent** (PyPI package) — **the most complete open-source AI test case generator** found in this research . **Features**: **Generates multiple test types**—End-to-End (E2E) user journeys, Integration tests (API contracts), Technical tests (performance, security, resilience), and Mocked System tests; **comprehensive scenario coverage**—happy paths, negative/edge cases, failure/recovery, security/performance; **ingests multi-format documentation** (PDF, Word, Excel, Markdown, text, source code); **analyzes code from GitHub repos** (public and private) or local folders; **RAG pipeline** using Google Gemini 2.0 Flash and text-embedding-004; **outputs Markdown documentation and structured test cases** . **Tech stack**: Python 3.11+, ChromaDB, Google Gemini API . **Deploy**: `pip install testteller`; `testteller generate`; Docker Compose available . **Trade-off**: **Gemini-dependent**—requires Google API key; ChromaDB for vector storage; newer project with limited community validation. **Best for**: developers wanting an open-source RAG agent that generates comprehensive test cases from documentation and code—especially those already using Google Gemini.
+  **AI-powered automated test generation and coverage enhancement tool**. **Features**: Analyzes existing repository codebases, detects missing code coverage branches, and automatically generates valid unit test suites to increase test coverage; integrates directly into CI/CD pipelines. **Tech stack**: Python, LLM orchestration. **License**: AGPL-3.0. **Best for**: automated unit test suite generation and code coverage improvement in CI/CD.
 
+- **[Pynguin](https://github.com/se2p/pynguin)** [![GitHub stars](https://img.shields.io/github/stars/se2p/pynguin?style=social&color=white)](https://github.com/se2p/pynguin/stargazers)
 
+  **The PYthoN General UnIt Test geNerator**. **Features**: Automated unit test generation framework for Python programs; applies search-based software testing and mutation testing algorithms to generate comprehensive pytest suites with high branch coverage. **Tech stack**: Python, AST analysis. **License**: LGPL-3.0 / MIT. **Best for**: automated Python unit test generation without manual scripting.
 
-- **Healwright**
+- **[Munk AI](https://github.com/chaxiu/munk-ai)** [![GitHub stars](https://img.shields.io/github/stars/chaxiu/munk-ai?style=social&color=white)](https://github.com/chaxiu/munk-ai/stargazers)
 
-  **Self-healing Playwright selector repair engine** (open source, PyPI) — **the most focused open-source tool for keeping AI-generated tests stable** . **Features**: **Automatic broken locator detection** during test runs; **token-efficient DOM snapshots**; **similarity heuristic repairs**—ID, class, attribute, and text similarity scores; **FastMCP server** for IDE agent integration; **live verification** in headless Chromium before applying patches; CLI for test runs and patch management . **Tech stack**: Python, Playwright . **Deploy**: `uv run healwright test` . **Trade-off**: **Heuristic-based, not LLM**—uses similarity scoring; requires Playwright test suite. **Best for**: teams generating tests with AI that then break on UI changes—Healwright repairs selectors deterministically without LLM costs.
+  **Self-improving AI testing engine across Android, iOS, and Web**. **Features**: Autonomous testing agent executing multi-platform test journeys; automatically detects UI changes, plans test paths, and refines execution strategies over time. **Tech stack**: Python, Computer Vision, Appium/Playwright. **License**: Apache-2.0. **Best for**: cross-platform mobile and web automated exploration and test scenario generation.
 
+- **[Scenario](https://github.com/langwatch/scenario)** [![GitHub stars](https://img.shields.io/github/stars/langwatch/scenario?style=social&color=white)](https://github.com/langwatch/scenario/stargazers)
 
+  **Agentic testing framework for agentic codebases**. **Features**: End-to-end conversational and multi-turn scenario simulation for AI agents; validates agent decisions, tool calls, and output safety against multi-step user scenarios. **Tech stack**: TypeScript / Python, LLM evaluators. **License**: Apache-2.0. **Best for**: testing and validating LLM agents and multi-agent workflows.
 
-- **playwright-self-healing-framework**
+- **[Randoop](https://github.com/randoop/randoop)** [![GitHub stars](https://img.shields.io/github/stars/randoop/randoop?style=social&color=white)](https://github.com/randoop/randoop/stargazers)
 
-  **Deterministic self-healing for Playwright** (open source, TypeScript) — **the most transparent open-source self-healing implementation** . **Features**: **Semantic fingerprint**—captures tag, id, classes, attributes, visible text, label, parent/sibling context; **six weighted sub-scores**; **threshold-based acceptance** (default 0.6); **full JSON audit trail** for every healing decision; **offline and deterministic**—no API keys, no LLM calls . **Tech stack**: TypeScript, Playwright, Vitest . **Deploy**: npm/TypeScript project . **Trade-off**: **Playwright-specific**; threshold tuning required. **Best for**: teams wanting explainable self-healing for generated tests—especially those uncomfortable with LLM unpredictability.
+  **Automatic unit test generation for Java**. **Features**: Feedback-directed random test generation for Java classes; automatically creates regression tests and error-revealing unit tests (JUnit) to capture bugs and contract violations. **Tech stack**: Java. **License**: Apache-2.0. **Best for**: enterprise Java unit test generation and regression suite creation.
 
+- **[TestPilot](https://github.com/githubnext/testpilot)** [![GitHub stars](https://img.shields.io/github/stars/githubnext/testpilot?style=social&color=white)](https://github.com/githubnext/testpilot/stargazers)
 
+  **Test generation using Large Language Models** by GitHub Next. **Features**: Explores adaptive LLM prompt orchestration to generate automated JavaScript and TypeScript unit test suites with assertion synthesis; researches AI-driven test completeness. **Tech stack**: TypeScript, OpenAI API. **License**: MIT. **Best for**: AI-driven JavaScript/TypeScript unit test generation research.
 
-### Additional Strong Open-Source Options
+- **[Chromogen](https://github.com/open-source-labs/Chromogen)** [![GitHub stars](https://img.shields.io/github/stars/open-source-labs/Chromogen?style=social&color=white)](https://github.com/open-source-labs/Chromogen/stargazers)
 
+  **UI-driven Jest test-generation tool for React state management**. **Features**: Automatically records state modifications (Recoil selectors and Zustand store hooks) during manual user interactions and outputs Jest unit and integration tests. **Tech stack**: JavaScript/TypeScript, Jest, React. **License**: MIT. **Best for**: front-end developers generating tests from React UI interaction.
 
+- **[Agentic-Playwright](https://github.com/idavidov13/agentic-playwright)** [![GitHub stars](https://img.shields.io/github/stars/idavidov13/agentic-playwright?style=social&color=white)](https://github.com/idavidov13/agentic-playwright/stargazers)
 
-- **CANVAS (canvas-heal)** — Semantic intent-based self-healing for UI tests (MIT, PyPI). Confidence-gated resolver (auto-heal above 0.92, needs confirmation 0.75–0.92), pytest plugin, Playwright and Selenium support, audit log exportable as JUnit XML; evaluated on real migrations—6/7 intents auto-healed in ShopEasy checkout redesign . **Note**: **Self-healing layer, not test generation**—it keeps generated tests stable. **Best for**: teams wanting research-validated self-healing with confidence gates.
+  **Production-grade Playwright + TypeScript scaffold for agentic testing**. **Features**: Ready-to-use testing harness designed specifically for autonomous AI coding agents to author, run, and self-validate Playwright test suites. **Tech stack**: TypeScript, Playwright. **License**: MIT. **Best for**: developers orchestrating AI agents to generate and execute Playwright end-to-end tests.
 
-- **Yewo** — AI-powered E2E testing agent for mobile (open source, alpha, PyPI). Natural language journeys, Appium-driven, secret masking, security rule auditing, coverage declarations . **Note**: **Alpha software**—not production-hardened; Appium dependency. **Best for**: teams wanting AI-driven mobile test generation with security rule auditing.
+- **[UTBotJava](https://github.com/UnitTestBot/UTBotJava)** [![GitHub stars](https://img.shields.io/github/stars/UnitTestBot/UTBotJava?style=social&color=white)](https://github.com/UnitTestBot/UTBotJava/stargazers)
 
+  **Automated unit test generation and precise code analysis for Java**. **Features**: Combines symbolic execution with machine learning to generate high-coverage JUnit test cases and pinpoint subtle edge-case bugs and security vulnerabilities. **Tech stack**: Java, Kotlin, Z3 solver. **License**: Apache-2.0. **Best for**: in-depth Java unit test generation and formal verification.
 
+- **[TestGPT](https://github.com/fayez-nazzal/TestGPT)** [![GitHub stars](https://img.shields.io/github/stars/fayez-nazzal/TestGPT?style=social&color=white)](https://github.com/fayez-nazzal/TestGPT/stargazers)
+
+  **AI companion that writes unit tests on your behalf**. **Features**: Automated CLI tool analyzing source code files and generating comprehensive unit tests with mocks and edge case coverage. **Tech stack**: Python, OpenAI API. **License**: MIT. **Best for**: rapid unit test scaffolding using LLMs.
+
+- **[write-the](https://github.com/Wytamma/write-the)** [![GitHub stars](https://img.shields.io/github/stars/Wytamma/write-the?style=social&color=white)](https://github.com/Wytamma/write-the/stargazers)
+
+  **AI-powered documentation and test generation tool**. **Features**: CLI tool that analyzes source code to synthesize documentation, docstrings, and executable unit tests using LLMs. **Tech stack**: Python, LLMs. **License**: MIT. **Best for**: simultaneous test generation and documentation synthesis.
+
+- **[TestTeller](https://github.com/iAviPro/testteller-agent)** [![GitHub stars](https://img.shields.io/github/stars/iAviPro/testteller-agent?style=social&color=white)](https://github.com/iAviPro/testteller-agent/stargazers)
+
+  **RAG-based test generation agent** (PyPI package: `testteller`). **Features**: **Generates multiple test types**—End-to-End (E2E) user journeys, Integration tests (API contracts), Technical tests (performance, security, resilience), and Mocked System tests; comprehensive scenario coverage (happy paths, edge cases, failure/recovery); ingests multi-format documentation (PDF, Word, Excel, Markdown, code); RAG pipeline powered by Google Gemini and ChromaDB; outputs structured Markdown and test scripts. **Tech stack**: Python 3.11+, ChromaDB, Google Gemini API. **License**: Open Source / PyPI. **Best for**: teams wanting an open-source RAG agent generating test cases directly from specification documents and code.
+
+- **[Healwright](https://github.com/amrsa1/healwright)** [![GitHub stars](https://img.shields.io/github/stars/amrsa1/healwright?style=social&color=white)](https://github.com/amrsa1/healwright/stargazers)
+
+  **Self-healing Playwright selector repair engine**. **Features**: Automatic broken locator detection during test runs; token-efficient DOM snapshots; similarity heuristic and AI-assisted repairs; FastMCP server for IDE agent integration; live verification in headless Chromium before saving patches. **Tech stack**: Python, Playwright, FastMCP. **License**: MIT / PyPI. **Best for**: keeping AI-generated Playwright tests stable across UI refactors.
+
+- **[Yewo](https://github.com/yewohq/yewo)** [![GitHub stars](https://img.shields.io/github/stars/yewohq/yewo?style=social&color=white)](https://github.com/yewohq/yewo/stargazers)
+
+  **AI-driven mobile E2E testing agent**. **Features**: Natural language test journey generation for iOS and Android; Appium-driven execution; sensitive data masking and security rule auditing. **Tech stack**: Python, Appium. **License**: Open Source / PyPI. **Best for**: AI-driven mobile test case generation and execution.
+
+- **[playwright-self-healing-framework](https://github.com/darkokos21/self-healing-framework-playwright)** [![GitHub stars](https://img.shields.io/github/stars/darkokos21/self-healing-framework-playwright?style=social&color=white)](https://github.com/darkokos21/self-healing-framework-playwright/stargazers)
+
+  **ML-powered self-healing test automation framework for Playwright**. **Features**: Captures semantic element fingerprints (tag, id, classes, attributes, visible text); evaluates candidates using ML ranking algorithms; threshold-based acceptance; generates confidence-based reports. **Tech stack**: TypeScript, Playwright, FastAPI, Python, scikit-learn. **License**: MIT. **Best for**: transparent, ML-ranked self-healing for Playwright test automation.
+
+- **[CANVAS (canvas-heal)](https://github.com/mandavillivijay/CANVAS)** [![GitHub stars](https://img.shields.io/github/stars/mandavillivijay/CANVAS?style=social&color=white)](https://github.com/mandavillivijay/CANVAS/stargazers)
+
+  **Semantic intent-based self-healing for UI tests** (PyPI: `canvas-heal`). **Features**: Confidence-gated resolver (auto-heal above 0.92, human confirmation 0.75–0.92); pytest plugin; supports Playwright and Selenium; audit logs exportable as JUnit XML. **Tech stack**: Python, pytest, Playwright/Selenium. **License**: MIT. **Best for**: research-validated, confidence-gated self-healing for web test suites.
 
 **Frameworks for building custom systems**: Combine **TestTeller** for RAG-based test generation with **Healwright** or **playwright-self-healing-framework** for selector stability—creating a layered open-source AI test generation stack. **None of these match BrowserStack's 90% faster creation with 91% accuracy or Katalon's agentic requirement-to-script loop**, but for teams wanting model transparency and data ownership, the options are functional.
 
