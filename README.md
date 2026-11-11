@@ -195,6 +195,14 @@ The following open-source AI test generation and self-healing tools are **sorted
   - **License**: Apache-2.0.
   - **Best for**: Testing and validating LLM agents and multi-agent workflows.
 
+- **[agent-qa](https://vostride.com)** [![GitHub_Stars](https://img.shields.io/github/stars/vostride/agent-qa?style=social&color=white)](https://github.com/vostride/agent-qa/stargazers) 🧪
+  **Natural-language web and mobile QA with persistent memory**.
+  - **Features**: Runs user journeys on web, Android and iOS through a CLI, local dashboard or MCP; persistent memidex memory, validated self-improvement, and recorded steps/screenshots.
+  - **Tech Stack**: TypeScript, Node.js 24+, configured model and browser/device environment; [source](https://github.com/vostride/agent-qa) and [docs](https://vostride.com/docs/agent-qa).
+  - **License**: FSL-1.1-ALv2.
+  - **Pricing / Free Tier Limits**: $0 software for permitted local use; no paid tier or per-test fee. Model, compute/device and optional remote-service costs are separate ([pricing](https://vostride.com/pricing.md)).
+  - **Best for**: Teams authoring and running natural-language E2E journeys with reusable application knowledge and inspectable evidence.
+
 - **[Randoop](https://github.com/randoop/randoop)** [![GitHub_Stars](https://img.shields.io/github/stars/randoop/randoop?style=social&color=white)](https://github.com/randoop/randoop/stargazers) ☕
   **Automatic unit test generation for Java**.
   - **Features**: Feedback-directed random test generation for Java classes; automatically creates regression tests and error-revealing unit tests (JUnit) to capture bugs and contract violations.
